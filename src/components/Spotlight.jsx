@@ -13,7 +13,7 @@ const Spotlight = () => {
   useEffect(() => {
     const fetchSpotlight = async () => {
       try {
-        const response = await fetch('/spotlight.json')
+        const response = await fetch('https://codewilson64.github.io/luxora-products-api/spotlight.json')
         const data = await response.json()
         setSpotlight(data)
       } catch (error) {
