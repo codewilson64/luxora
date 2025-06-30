@@ -1,4 +1,4 @@
-import HomeBg from '../assets/HomeBgImg.webp'
+import HomeBg from '../assets/homeBgImg.webp'
 import Category from '../components/Category'
 import Footer from '../components/footer'
 // import MostWantedBags from '../components/MostWantedBags'
