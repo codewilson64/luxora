@@ -7,9 +7,8 @@ const Category = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await fetch('/category.json')
+        const response = await fetch('https://codewilson64.github.io/luxora-products-api/category.json')
         const data = await response.json()
-        console.log(data)
         setCategory(data)
       } 
       catch (error) {
