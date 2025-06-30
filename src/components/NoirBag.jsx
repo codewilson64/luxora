@@ -25,7 +25,7 @@ const NoirBag = () => {
 
   useEffect(() => {
     const fetchBag = async () => {
-      const response = await fetch('/products.json')
+      const response = await fetch('https://codewilson64.github.io/luxora-products-api/products.json')
       const data = await response.json()
       const bag = data.find(item => item.name === "Beryl Tote Bag - Black")
       setBag(bag)
