@@ -1,6 +1,6 @@
 import HomeBg from '../assets/homeBgImg.webp'
 import Category from '../components/Category'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 // import MostWantedBags from '../components/MostWantedBags'
 import NoirBag from '../components/NoirBag'
 import Spotlight from '../components/Spotlight'
