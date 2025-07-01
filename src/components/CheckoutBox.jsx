@@ -10,14 +10,26 @@ const CheckoutBox = () => {
             <h1 className="text-xl text-center font-bold text-black uppercase">order summary</h1>
           </div>
 
-          <div className='flex items-center justify-between font-normal text-black py-5 border-b border-gray-300'>
-            <div className='text-sm'>
-              <p>Subtotal</p>
+          <div className='flex flex-col gap-4 font-normal text-black py-5 border-b border-gray-300'>
+            <div className='flex items-center justify-between'>
+              <div className='text-sm'>
+                <p>Subtotal</p>
+              </div>
+
+              <div className='text-lg'>
+                <p>${subTotal.toFixed(2)}</p>
+              </div>
             </div>
 
-            <div className='text-lg'>
-              <p>${subTotal.toFixed(2)}</p>
-            </div>
+            <div className='flex items-center justify-between'>
+              <div className='text-sm'>
+                <p>Delivery</p>
+              </div>
+
+              <div className='text-lg'>
+                <p>Free</p>
+              </div>
+            </div>           
           </div>
 
           <div className='text-lg text-black py-5 border-b border-gray-300'>
