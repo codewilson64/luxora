@@ -12,7 +12,7 @@ const Products = () => {
         const response = await fetch('https://codewilson64.github.io/luxora-products-api/products.json')
         const data = await response.json()
         const productsData = data.filter(p => p.category === category)
-        console.log(productsData)
+        console.log(data)
         setProducts(productsData)
       } 
       catch (error) {

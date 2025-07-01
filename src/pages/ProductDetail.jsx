@@ -9,7 +9,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProductDetail = async () => {
       try {
-        const response = await fetch('/products.json')
+        const response = await fetch('https://codewilson64.github.io/luxora-products-api/products.json')
         const data = await response.json()
         const productDetail = data.find(p => p.id === Number(id))
         setProduct(productDetail)
